@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: black;
+    height: 110vh;
+}
+.introdução{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo img{
+    border: 0;
+    border-radius: 150px;
+}
+.flex{
+    display: flex;
+}
+.flex2{
+    display: flex;
+
+}
+/**INICIO DO HEADER**/ 
+
+header{
+    padding: 50px 5%;
+}
+header > .introdução{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #858484;
+    text-decoration: none;
+    font-size: larger;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .contato button{
+    padding: 10px 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    border: 0;
+    border-radius: 13px;
+    background-color: lime;
+
+}
+header .contato button:hover{
+    box-shadow: 0px 0px 8px aliceblue;
+    background-color: #fff;
+    transform: scale(1.0);
+    transition: 0.3s;
+}
+/**SEGUNDA SEÇÃO DO HTML E CSS **/
+
+section.topo_do_site{
+    padding: 80px 5%;
+}
+
+section.topo_do_site .flex{ 
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    
+}
+.topo_do_site  h4{
+    color: white;
+    font-size: small;
+    padding: 10px 0px;
+    text-align: justify;
+    
+
+}
+.topo_do_site  h1{
+    color: white;
+    font-size: x-large;
+    padding: 10px 0px;
+    text-align: justify;
+
+}
+.topo_do_site  p{
+    color: white;
+    font-size: medium;
+    padding: 10px 0px;
+    text-align: justify;
+
+}
+section.topo_do_site .flex .border{
+    display: flex;
+    background-color: lime;
+    padding: 60px 2px;
+    border: none;
+    border-radius: 13px;
+}
+
+
+section.topo_do_site .flex .fotominha img{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.listaapp{
+    padding: 5px 1px;
+}
+.listaapp nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.listaapp nav ul li{
+    margin-right: 0px;
+}
+/**Formulario**/
+/* CSS para a seção Entre em Contato */
+section.entreemcontato {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+section.entreemcontato .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.entreemcontato h2 {
+    margin-bottom: 30px;
+}
+
+section.entreemcontato .formulario {
+    display: flex;
+    justify-content: center;
+}
+
+section.entreemcontato .inputs {
+    width: 100%;
+    max-width: 400px;
+}
+
+section.entreemcontato .input-group {
+    margin-bottom: 20px;
+}
+
+section.entreemcontato .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+section.entreemcontato .input-group input,
+section.entreemcontato .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+section.entreemcontato .input-group textarea {
+    height: 100px;
+}
+
+section.entreemcontato button[type="submit"] {
+    padding: 10px 20px;
+    background-color: lime;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.entreemcontato button[type="submit"]:hover {
+    background-color: #00ff00;
+}
+/* Estilos para a seção de Especialidades */
+
+section.especialidades {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+section.especialidades .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.especialidades h2 {
+    margin-bottom: 30px;
+}
+
+section.especialidades .especialidades-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.especialidades .especialidade-item {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+section.especialidades .especialidade-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+section.especialidades .especialidade-item h3 {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+section.especialidades .especialidade-item p {
+    font-size: medium;
+}

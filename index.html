@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <header  id="incio" class="inicio">
+        <div class="introdução">
+            <div class="logo">
+                <a href="">
+                    <img src="imagens/albuquerque.png" alt="logotipo" width="150px" height="150px">
+                </a>
+            </div> <!--logo-->
+            <nav>
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#especialidades">ESPECIALIDADES</a></li>
+                    <li><a href="#topo_do_site">SOBRE</a></li>
+                </ul>
+            </nav>
+            <div class="contato">
+                <a href="#entreemcontato">
+                    <button type="button">CONTATO</button>
+                </a>
+            </div>
+        </div> <!--introdução-->
+        <main>
+            <section id="topo_do_site" class="topo_do_site">
+                <div class="incioSite">
+                    <div class="flex">
+                    <div class="texto">
+                        <h4>BEM VINDOS!</h4>
+                        <h1>Eu Sou Rafael & Curso Aanlise e Desenvolvimento de Sistemas</h1>
+                        <P>Sou um entusiasta da tecnologia apaixonado por explorar e criar soluções inovadoras. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, mergulhando de cabeça no universo da programação e do desenvolvimento de software.
+
+                            Neste espaço, compartilho um vislumbre das minhas aventuras no mundo da tecnologia. Desde projetos simples até desafios mais complexos, cada linha de código é uma oportunidade de aprendizado e crescimento.</P>
+
+                    </div>
+                    <div class="border">
+                    <div class="fotominha">
+                        <img src="imagens/rafael.rafael.jpeg" alt="minhaFoto" width="200px" height="100px">
+                    </div>
+                    <div class="listaapp">
+                    <nav>
+                        <ul>
+                            <li><a href="https://github.com/vrDante016"><img src="imagens/github.png" alt="github" width="50px" height="50px"></a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox"><img src="imagens/email.png" alt="email" width="50px" height="50px"></a></li>
+                            <li><a href=""><img src="imagens/linkedin.png" alt="linkedin" width="50px" height="50px" ></a></li>
+                        </ul>
+                    </nav>
+                    </div> 
+                    </div> <!--borda com cores-->
+                    </div> <!--flex-->
+                </div> <!--div do topo do site-->
+            </section>
+            <section id="entreemcontato" class="entreemcontato">
+                <div class="container">
+                    <h2>Entre em Contato</h2>
+                    <form class="formulario" action="#" method="POST">
+                        <div class="inputs">
+                            <div class="input-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone">
+                            </div>
+                            <div class="input-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="especialidades" class="especialidades">
+                <div class="container">
+                    <h2>Minhas Especialidades</h2>
+                    <div class="especialidades-lista">
+                        <div class="especialidade-item">
+                            <img src="imagens/c++.png" alt="C++" width="50px" height="50px">
+                            <h3>C++</h3>
+                            <p>Sou especialista em C++, desenvolvendo aplicações robustas e eficientes.</p>
+                        </div>
+                        <div class="especialidade-item">
+                            <img src="imagens/java.png" alt="Java" width="50px" height="50px">
+                            <h3>Java</h3>
+                            <p>Tenho experiência sólida em Java, desenvolvendo aplicativos escaláveis e seguros.</p>
+                        </div>
+                        <div class="especialidade-item">
+                            <img src="imagens/html.css.png" alt="HTML e CSS" width="50px" height="50px">
+                            <h3>HTML e CSS</h3>
+                            <p>Domino HTML e CSS para criar interfaces web bonitas e responsivas.</p>
+                        </div>
+                        <div class="especialidade-item">
+                            <img src="imagens/python.png" alt="Python" width="50px" height="50px">
+                            <h3>Python</h3>
+                            <p>Sou fluente em Python, utilizando-o para desenvolvimento web, análise de dados e automação.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </header>
+    <script>
+        
+        function enviarFormulario(event) {
+            event.preventDefault();
+            
+            
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var telefone = document.getElementById("telefone").value;
+            var mensagem = document.getElementById("mensagem").value;
+
+            
+
+            
+            alert("Dados enviados:\nNome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone + "\nMensagem: " + mensagem);
+        }
+
+       
+        document.querySelector(".formulario").addEventListener("submit", enviarFormulario);
+    </script>
+</body>
+</html>
